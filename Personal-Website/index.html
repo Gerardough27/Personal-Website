@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Portfolio</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">-
+        <title>Portfolio</title> <!--Title that appears on the browser tab-->
+        <meta charset="utf-8"> <!--Ensures proper character coding-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Makes site responsive for different screen sizes-->
+        <link rel="stylesheet" href="styles.css"> <!--Link to external CSS file-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> <!--FontAweseome for icons-->
     </head>
+
     <body>
+        <!--HEADER SECTION-->
         <header>
         <nav id="navbar">
-            <div class="logo">G</div>
+            <!--Logo linking back to homepage-->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="GD Portfolio Logo">
+                </a>
+            </div>
+
+            <!--Navigation menu-->
             <ul>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="projects.html">Coding Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -19,11 +29,13 @@
         </nav> 
         </header>   
 
+        <!--WECLOME SECTION-->
         <section id="welcome-section">
-            <h1>Hey I'm Gerardo</h1>
+            <h1>Hey I'm Gerardo</h1> <!--Main greeting-->
             <p>a digital specialist and aspiring web developer</p>
         </section>
         
+        <!--ABOUT ME SECTION-->
         <section id="about">
             <div class="content"></div>
 
@@ -34,10 +46,12 @@
             <p>I'm also actively learning to become a full-stack web developer. Currently, I'm focused on building my skills in HTML and CSS, and I'm eager to grow my technical knowledge every day. My goal is to integrate these skills with my marketing background, combining the best of both worlds to create dynamic, user-friendly digital experiences.</p>
         </section>
 
+        <!--PROJECTS SECTION-->
         <section id="projects">
             <h2>Coding Projects</h2>
             <p>Building, learning, and improving—one project at a time.</p>
-        
+
+            <!--Project list-->
             <div class="project-tile">
                 <img src="https://via.placeholder.com/300" alt="Project 1 Thumbnail">
                 <h3>Project 1</h3>
@@ -67,11 +81,13 @@
             </div>  
         </section>
 
+        <!--CONTACT SECTION-->
         <section> 
             <div id="contact">
                 <h2>Let's Connect!</h2>
                 <p>Always looking to network.</p>
                 <div class="social-icons">
+                    <!--Social media links-->
                     <div class="icon">
                         <i class="fab fa-linkedin"></i>
                         <span>LinkedIn</span>
@@ -92,6 +108,7 @@
             </div>
         </section>
 
+        <!--FOOTER SECTION-->
         <footer>
             <p>Bridging the gap between marketing strategy and innovative web development. Let’s create something impactful.</p>
             <p>© 2024 Gerardo Delgadillo - All rights reserved.</p>
