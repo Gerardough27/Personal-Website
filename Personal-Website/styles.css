@@ -1,0 +1,242 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+    padding-top: 100px; /* Ensure content doesn't get cut off by fixed navbar */
+}
+
+/* Navbar */
+#navbar {
+    background-color: #0097b2; /* Blue background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+    flex-wrap: wrap; /* Allow the menu to wrap if necessary */
+}
+
+/* Logo styles */
+.logo img {
+    height: 100px;
+    width: auto;
+}
+
+/* Navbar menu */
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; /* Align the menu items to the right */
+    gap: 20px; /* Space between the menu items */
+    flex-grow: 1; /* Allow the list to grow to fill available space */
+    flex-wrap: wrap; /* Allow the menu items to wrap if there's not enough space */
+}
+
+#navbar ul li {
+    display: inline-block;
+}
+
+#navbar ul li a {
+    color: white; /* White text for navbar items */
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 20px; /* Add padding around the links */
+    transition: color 0.3s;
+}
+
+#navbar ul li a:hover {
+    color: #ffffff; /* Change to black on hover */
+}
+
+/* Welcome Section */
+#welcome-section {
+    padding-top: 15px; /* Space for the fixed navbar */
+    text-align: center;
+    background-color: #ff8c00;
+}
+
+#welcome-section h1 {
+    font-size: 80px;
+    color: #0097b2;
+    margin-bottom: 25px;
+}
+
+#welcome-section p {
+    font-size: 40px;
+    color: #fdfdfd;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    padding-bottom: 25px;
+}
+
+/* Responsive styling for mobile */
+@media (max-width: 768px) {
+    #navbar ul {
+        justify-content: center; /* Center the menu items on smaller screens */
+        gap: 15px;
+    }
+
+    #navbar ul li a {
+        font-size: 16px; /* Adjust font size for smaller screens */
+        padding: 8px 15px;
+    }
+
+    #navbar ul li {
+        flex: 1 1 auto; /* Allow items to shrink and grow dynamically */
+    }
+
+    #welcome-section h1 {
+        font-size: 28px;
+    }
+
+    #welcome-section p {
+        font-size: 16px;
+    }
+}
+
+/* About Section */
+#about {
+    padding: 20px;
+    text-align: center;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#about h2 {
+    font-size: 28px;
+    color: #0097b2;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+/* Projects Section */
+#projects {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #ff8c00;
+}
+
+#projects h2 {
+    font-size: 50px;
+    color: #0097b2;
+    margin-bottom: 20px;
+}
+
+/* Projects Section */
+#projects p {
+    color: #ffffff;
+    font-size: 25px;
+}
+
+
+.project-tile {
+    display: inline-block;
+    width: 22%;
+    padding: 20px;
+    margin: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.project-tile img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.project-tile h3 {
+    font-size: 20px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.project-tile p {
+    font-size: 16px;
+    color: #666;
+    margin: 10px 0;
+}
+
+.project-tile a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #0097b2;
+    transition: color 0.3s;
+}
+
+.project-tile a:hover {
+    color: #000000;
+}
+
+/* Social Media Icons Section */
+#socials {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #000000;
+}
+
+#socials h2 {
+    font-size: 28px;
+    color: #0097b2;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex; /* Use flexbox to arrange icons in a row */
+    justify-content: center; /* Center the icons horizontally */
+    align-items: center; /* Vertically center the icons */
+    gap: 30px; /* Space between the icons */
+    flex-wrap: wrap; /* Allow wrapping in case there is not enough space */
+}
+
+.icon {
+    display: flex;
+    align-items: center; /* Center the icon vertically with the text */
+}
+
+.icon i {
+    font-size: 28px;
+    margin-right: 10px; /* Add space between the icon and the text */
+}
+
+.icon a {
+    color: #ffffff; /* Color of the social media links */
+    font-size: 18px;
+    text-decoration: none; /* Remove the underline */
+    transition: color 0.3s;
+}
+
+.icon a:hover {
+    color: #000000; /* Change color to black when hovered */
+}
+
+
+/* Footer Section */
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+footer p {
+    font-size: 16px;
+    margin: 5px 0;
+}
