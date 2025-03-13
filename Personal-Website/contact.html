@@ -84,14 +84,17 @@
         <p>Bridging the gap between marketing strategy and innovative web development. Let's create something impactful.</p>
         <p>© 2024 Gerardo Delgadillo - All rights reserved.</p>
     </footer>
-
     <script type="text/javascript">
+        // Initialize EmailJS with your public key (replace 'YOUR_USER_ID' with your actual EmailJS public key)
+        emailjs.init("YOUR_USER_ID");
+    
         // Function to send email via EmailJS
         function sendEmail(event) {
             event.preventDefault(); // Prevent the default form submission
-
+    
             var form = document.getElementById('contact');
             
+            // Send the form to EmailJS
             emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form)
                 .then(function(response) {
                     console.log('SUCCESS!', response);
@@ -102,6 +105,7 @@
                 });
         }
     </script>
+    
 
 </body>
 </html>
