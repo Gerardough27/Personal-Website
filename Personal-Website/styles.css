@@ -63,13 +63,13 @@
 
 
 #welcome-section h1 {
-    font-size: 80px;
+    font-size: 100px;
     color: #0097b2;
     margin-bottom: 25px;
 }
 
 #welcome-section p {
-    font-size: 40px;
+    font-size: 50px;
     color: #fdfdfd;
     margin-top: 5px;
     margin-bottom: 0px;
@@ -117,13 +117,13 @@
 }
 
 #about h2 {
-    font-size: 32px;
+    font-size: 50px;
     color: #0097b2;
     margin-bottom: 20px;
 }
 
 #about p {
-    font-size: 18px;
+    font-size: 25px;
     line-height: 1.6;
     margin: 10px 0;
 }
@@ -247,6 +247,13 @@ footer p {
 }
 
 
+
+
+
+
+
+/* ABOUT PAGE */
+
 /* Hero Section */
 #headline {
     background-color: #ff8c00; /* Orange background */
@@ -258,24 +265,20 @@ footer p {
 
 
 #headline h1 {
-    font-size: 36px;
+    font-size: 72px;
     margin-bottom: 10px;
     text-align: center;
 }
 
 #headline h2 {
-    font-size: 24px;
+    font-size: 36px;
     margin-bottom: 20px;
 }
 
 #headline p {
-    font-size: 18px;
+    font-size: px;
     margin-bottom: 20px;
 }
-
-
-
-
 
 
 /* Main Intro Section */
@@ -431,10 +434,6 @@ footer p {
 }
 
 
-
-
-
-
 /* Fun Facts Section */
 #fun-facts {
     background-color: #000000; /* Black background */
@@ -476,11 +475,6 @@ footer p {
     font-size: 16px;
     color: white; /* White text */
 }
-
-
-
-
-
 
 
 /* Contact Section */
